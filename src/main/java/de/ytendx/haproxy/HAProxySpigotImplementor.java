@@ -10,15 +10,11 @@ public class HAProxySpigotImplementor extends JavaPlugin {
     public void onEnable() {
         getLogger().info("HAProxySpigotImplementor by ytendx using TinyProtocol is being activated....");
 
-        getLogger().info("----------------------------------------------------------------------------");
-        getLogger().info("We recommend protecting your server with NeoProtect (https://neoprotect.net/)");
-        getLogger().info("----------------------------------------------------------------------------");
-
         new TinyProtocol(this);
 
         this.getCommand("haproxyimplementor").setExecutor((sender, command, label, args) -> {
             sender.sendMessage(ChatColor.GRAY + "The server uses HAProxyImplementor made by "
-                    + ChatColor.YELLOW + "ytendx " + ChatColor.GRAY + "for " + ChatColor.AQUA + "NeoProtect.net");
+                    + ChatColor.YELLOW + "ytendx.");
             return true;
         });
 
